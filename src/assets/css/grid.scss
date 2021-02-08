@@ -1,0 +1,34 @@
+$container: 960;
+$gutter: 20;
+$colms: 16;
+
+%grid {
+  float: left;
+  margin-left: ($gutter / 2) + px;
+  margin-right: ($gutter / 2) + px;
+}
+
+@for $i from 1 through $colms {
+  $width: $container / $colms * 1 - $gutter;
+  .grid-#{$i} {
+    @extend %grid;
+    width: $width + px;
+  }
+}
+
+.container {
+  width: $container + px;
+  margin: 0 auto;
+  padding: 0px;
+  position: relative;
+}
+
+.container::after,
+.container::before {
+  content: "";
+  display: table;
+}
+
+.container::after {
+  clear: both;
+}

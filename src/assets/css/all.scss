@@ -1,0 +1,23 @@
+@import "./normalize.scss";
+@import "./reset.scss";
+@import "./mixins.scss";
+@import "./grid.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap");
+
+$navigation-color: #3f378f;
+$text-color: #73a1c2;
+$sec-text-color: #11193c;
+$title-font: "Montserrat", serif;
+$text-font: "Open sans", serif;
+$h1-size: 18px;
+$h2-size: 14px;
+$text-size: 12px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", serif;
+}
